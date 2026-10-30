@@ -1,0 +1,6 @@
+{
+  "name": "Sarahskye FashionHub",
+  "description": "Bespoke fashion design showcase, portfolio gallery, and appointment booking platform for Sarahskye Collection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
