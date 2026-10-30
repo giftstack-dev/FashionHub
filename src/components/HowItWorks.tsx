@@ -13,19 +13,19 @@ export const HowItWorks: React.FC = () => {
       step: '02',
       icon: Ruler,
       title: 'Measurements',
-      description: 'Get measured in-studio in Lagos, or submit your measurements through our easy guided self-measurement guide.',
+      description: 'Submit your measurements easily using our guided measurement chart or review them directly with Sarah on WhatsApp.',
     },
     {
       step: '03',
       icon: Sparkles,
-      title: 'Tailoring & Fitting',
-      description: 'Your garment is drafted, cut, and sewn with precision craftsmanship, followed by a personal fitting check.',
+      title: 'Tailoring & Craft',
+      description: 'Your garment is drafted, cut, and sewn with precision tailoring, featuring generous seam allowances for a perfect drape.',
     },
     {
       step: '04',
       icon: PackageCheck,
-      title: 'Final Delivery',
-      description: 'Receive your steamed, pristine outfit in our protective garment bag, ready to turn heads at your occasion.',
+      title: 'Direct Delivery',
+      description: 'Receive your steamed, pristine outfit in our protective garment bag anywhere in Delta State or nationwide.',
     },
   ];
 

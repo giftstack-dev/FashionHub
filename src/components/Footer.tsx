@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Instagram, Phone, Mail, Truck } from 'lucide-react';
+import { ArrowUp, Phone, Mail, Truck } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 import { FancyLogo } from './FancyLogo';
 
@@ -37,25 +37,16 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-3 pt-2">
               <a
-                href={siteConfig.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#09172B] transition-colors flex items-center justify-center text-slate-200"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
                 href={`tel:${siteConfig.phoneRaw}`}
                 aria-label="Phone"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#09172B] transition-colors flex items-center justify-center text-slate-200"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#09172B] transition-colors flex items-center justify-center text-slate-200 shadow-xs"
               >
                 <Phone className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
                 aria-label="Email"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#09172B] transition-colors flex items-center justify-center text-slate-200"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#09172B] transition-colors flex items-center justify-center text-slate-200 shadow-xs"
               >
                 <Mail className="w-4 h-4" />
               </a>

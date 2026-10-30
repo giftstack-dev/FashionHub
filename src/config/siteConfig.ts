@@ -11,26 +11,24 @@ export const siteConfig = {
   brandName: 'Sarahskye FashionHub',
   brandWordmark: 'Sarah Skye Collection',
   tagline: 'Crafted with love. Tailored to you.',
-  subtitle: 'Bespoke fashion design and made-to-measure tailoring. Purely online atelier with nationwide & global delivery.',
+  subtitle: 'Bespoke fashion design and made-to-measure tailoring based in Delta State, Nigeria. Online atelier with nationwide delivery.',
   aboutSummary:
-    'Founded by lead designer Sarah, Sarahskye Collection is a premier bespoke atelier specializing in made-to-measure fashion, regal African traditional attire, corporate power wear, and bridal splendor. We operate as an online bespoke studio offering nationwide delivery across all Nigerian states and worldwide shipping.',
+    'Founded by lead designer Sarah, Sarahskye Collection is a bespoke atelier based in Delta State, Nigeria, specializing in made-to-measure fashion, elegant traditional attire, corporate power wear, and bridal dresses. With over 2+ years of hands-on tailoring and 40+ custom outfits crafted, we bring your dream styles to life.',
 
-  // Direct Contact & Socials
+  // Direct Contact (Instagram removed per user request)
   phone: '+234 805 197 9345',
   phoneRaw: '+2348051979345',
   whatsappNumber: '2348051979345',
-  email: 'sarahskye500@gmail.com', // Updated designer email
-  instagramHandle: '@sarahskye_fashionhub',
-  instagramUrl: 'https://instagram.com/sarahskye_fashionhub',
+  email: 'sarahskye500@gmail.com',
 
-  // Studio & Delivery Policy (No physical shop currently, Nationwide delivery)
+  // Studio & Delivery Policy (Based in Delta State, No physical shop, Delivery across Delta & nationwide)
   location: {
     hasPhysicalShop: false,
-    hubCity: 'Lagos, Nigeria',
+    hubCity: 'Delta State, Nigeria',
     serviceModel: 'Online Bespoke Atelier & Made-to-Measure Studio',
-    deliveryScope: 'Nationwide Delivery across all 36 States in Nigeria & International Shipping (UK, US, Canada, Europe)',
-    couriers: ['GIG Logistics', 'DHL Express', 'Interstate Waybill Couriers'],
-    fittingNote: 'Fittings are handled via our precision measurement guide. Concierge in-person fitting in Lagos available by advance appointment.',
+    deliveryScope: 'Delivery available across Delta State and nationwide across Nigeria via trusted courier waybills.',
+    couriers: ['GIG Logistics', 'DHL Express', 'Interstate Transport Waybills'],
+    fittingNote: 'Fittings are accurately done through our guided measurement chart, with personal WhatsApp consultation with Sarah.',
   },
 
   // Working Hours (Monday - Saturday 9am-5pm)
@@ -52,27 +50,32 @@ export const siteConfig = {
     {
       id: 'custom-outfit',
       name: 'Custom Outfit (Bespoke Design from Scratch)',
-      description: 'Exclusive bespoke outfit designed and cut specifically to your silhouette and event.',
+      description: 'Exclusive custom outfit tailored to your measurements and event specifications.',
     },
     {
       id: 'sewn-outfit',
       name: 'Sewn Outfit (Made-to-Measure / Cut & Sew)',
-      description: 'Send us your measurements or fabric, or choose a design from our collection catalog.',
+      description: 'Choose a style from our collection or send in your fabric for precision tailoring.',
     },
     {
       id: 'traditional-owambe',
-      name: 'Traditional / Owambe Attire & Aso-Ebi',
-      description: 'Bespoke lace, brocade, agbada, or corset iro & buba tailored for weddings and celebrations.',
+      name: 'Traditional / Owambe Attire',
+      description: 'Teal lace, sapphire lace, boubou gowns, and cold-shoulder Ankara dresses.',
     },
     {
       id: 'corporate-wear',
-      name: 'Corporate & Power Suit Tailoring',
-      description: 'Impeccable executive blazers, shift dresses, and tailored trousers for the workplace.',
+      name: 'Corporate & Executive Wear',
+      description: 'Ankara panel shirt dresses, tailored power suits, and chic blouses.',
     },
     {
-      id: 'bridal-consultation',
-      name: 'Bridal & Reception Consultation',
-      description: 'Comprehensive styling session for brides, groom sets, and wedding reception gowns.',
+      id: 'bridal-reception',
+      name: 'Bridal & Reception Wear',
+      description: 'Blue ombre gowns, terracotta ruffled tulle gowns, and couples native sets.',
+    },
+    {
+      id: 'kids-couture',
+      name: 'Kids Occasion Wear',
+      description: 'Charming printed pinafores and pleated party frocks for little ones.',
     },
   ],
 
@@ -95,47 +98,47 @@ export const siteConfig = {
     name: 'Nigerian Naira',
   },
 
-  // Pricing & "Starting From" Guide
+  // Updated Pricing Guide based on user's exact price lists
   pricingGuide: [
     {
-      category: 'Casual & Resort Wear',
+      category: 'Casual & Everyday Chic',
+      startingPrice: 10000,
+      popularFor: 'Tops with floral skirts (₦10,000), Ankara trousers (₦12,000), Duo sets (₦20,000)',
+      turnaroundTime: '3 – 5 working days',
+      description: 'Comfortable everyday statements crafted with floral prints, drop-waist cuts, and wide-leg Ankara trousers.',
+      features: ['Floral skirts & tops', 'Ankara palazzo trousers', 'Cardigan & pant co-ords'],
+    },
+    {
+      category: 'Corporate & Power Dressing',
+      startingPrice: 12000,
+      popularFor: 'Shirt dresses (₦17,000), Blouse & trousers (₦15,000), Vest & suit sets (₦12,000 – ₦42,000)',
+      turnaroundTime: '4 – 6 working days',
+      description: 'Smart executive workwear, Ankara panel shirt dresses, convocation sets, and tailored couple suits.',
+      features: ['Ankara panel shift dress', 'Convocation vest & pant sets', 'Couple formal gala suit sets'],
+    },
+    {
+      category: 'Traditional & Owambe',
+      startingPrice: 14000,
+      popularFor: 'Ankara dresses (₦14,000), Kaftan gowns (₦17,000), Lace two-pieces (₦27,000 – ₦30,000)',
+      turnaroundTime: '4 – 7 working days',
+      description: 'Stunning Nigerian celebration wear featuring teal & sapphire lace, boubou gowns, and cold-shoulder Ankara styles.',
+      features: ['Teal & blue lace two-piece sets', 'Printed silk boubou gowns', 'Cold-shoulder lace/Ankara styles'],
+    },
+    {
+      category: 'Bridal & Ceremony Gowns',
       startingPrice: 35000,
-      popularFor: 'Ankara palazzo pants, Crop shirts, Drop-waist dresses, Co-ord sets',
-      turnaroundTime: '3 – 5 working days',
-      description: 'Effortless everyday chic made with breathable cottons, Dutch wax prints, and tailored finishes.',
-      features: ['Pre-shrunk authentic African prints', 'High-waisted tailored bands', 'Comfortable French seams'],
-    },
-    {
-      category: 'Corporate & Executive',
-      startingPrice: 42000,
-      popularFor: 'Shirt dresses, Power suits, Peplum blouses, Academic convocation sets',
-      turnaroundTime: '4 – 7 working days',
-      description: 'Sharp, commandingly elegant corporate apparel cut for daily professional comfort.',
-      features: ['Precision seam allowances', 'Contrast piping & Ankara panels', 'Crease-resistant structure'],
-    },
-    {
-      category: 'Traditional & Native',
-      startingPrice: 38000,
-      popularFor: 'Lace peplum blouses, Corset iro & buba, Boubou maxi gowns, Agbada sets',
-      turnaroundTime: '4 – 7 working days',
-      description: 'Exquisite African heritage wear adorned with cord lace, floral motifs, and rich brocades.',
-      features: ['Handcrafted detailing', 'Breathable inner lining', 'Generous seam allowances for easy adjustments'],
-    },
-    {
-      category: 'Bridal & Reception',
-      startingPrice: 85000,
-      popularFor: 'Dip-dye ombre reception gowns, Couple wedding sets, Ruffled boubou gowns',
+      popularFor: 'Blue ombre gowns (₦40,000), Red ruffled tulle gowns (₦35,000), Men’s native sets (₦17,000 extra)',
       turnaroundTime: '2 – 3 weeks',
-      description: 'Luxurious heirloom wedding creations with cascading organza ruffles, silk ombres, and beadwork.',
-      features: ['Design sketch & consultation', 'Couple matching options', 'Complimentary garment bag'],
+      description: 'Memorable wedding reception gowns and couple engagement sets adorned with cascading organza ruffles and ombre silk.',
+      features: ['Sapphire blue ombre silk gown', 'Red ruffled tulle boubou gown', 'Matching men’s native wear option'],
     },
     {
-      category: 'Kids & Mini Couture',
-      startingPrice: 22000,
-      popularFor: 'Birthday frocks, Shoulder-tie party dresses, Holiday pinafores',
+      category: 'Kids Occasion Wear',
+      startingPrice: 5500,
+      popularFor: 'Printed party top with pleated skirt (₦5,500)',
       turnaroundTime: '3 – 5 working days',
-      description: 'Skin-friendly, comfortable children’s occasion wear tailored with soft inner linings.',
-      features: ['100% hypoallergenic cotton lining', 'Adjustable shoulder ties', 'Room-to-grow seam margins'],
+      description: 'Sweet, comfortable children’s party wear designed with bright prints and pleated hems.',
+      features: ['100% breathable cotton', 'Shoulder ribbon ties', 'Comfort pleated hem'],
     },
   ],
 
@@ -143,32 +146,32 @@ export const siteConfig = {
   testimonials: [
     {
       id: 't-1',
-      name: 'Bukola Adeleke',
-      role: 'Client from Abuja',
-      location: 'Nationwide Delivery',
-      outfit: 'Royal Sapphire Beaded Lace Peplum & Scalloped Skirt',
+      name: 'Joy Efe',
+      role: 'Client from Warri, Delta State',
+      location: 'Delta State',
+      outfit: 'Teal Lace Two-Piece Owambe Set (₦30,000)',
       quote:
-        'I ordered my traditional wedding guest attire from Abuja without an in-person fitting. Sarah followed my measurements to the millimeter. The royal blue lace and beadwork were stunning, and delivery was right on time!',
+        'Sarah made my teal lace outfit in just 5 days. The fit was so precise without any in-person drama. Her customer care on WhatsApp made the entire process so easy!',
       rating: 5,
     },
     {
       id: 't-2',
-      name: 'Temitope Olatunji',
-      role: 'Graduate & Corporate Analyst',
-      location: 'Lagos, Nigeria',
-      outfit: 'Honor Convocation Satin Power Suit',
+      name: 'Blessing Osagie',
+      role: 'Corporate Professional',
+      location: 'Benin City (Delivered from Delta)',
+      outfit: 'Ankara Panel Shirt Dress (₦17,000)',
       quote:
-        'Sarah tailored my royal blue convocation suit with the white contrast jacket. Everyone at the ceremony kept asking who made it. Her attention to detail and customer care on WhatsApp are second to none.',
+        'The Ankara panel shirt dress is my favorite work outfit now! The neat stitching and high-quality crepe fabric make it look way more expensive than ₦17,000.',
       rating: 5,
     },
     {
       id: 't-3',
-      name: 'Ngozi Okonkwo',
-      role: 'Bride',
-      location: 'Port Harcourt',
-      outfit: 'Terracotta Couple Engagement Ceremony Set',
+      name: 'Kevwe & Oghenero',
+      role: 'Newlyweds',
+      location: 'Delta State',
+      outfit: 'Terracotta Red Ruffled Gown & Matching Men’s Set',
       quote:
-        'The matching terracotta couple set for my husband and me arrived in Port Harcourt via waybill in pristine condition. The organza ruffles on my boubou gown flowed like a dream. Thank you Sarah!',
+        'We ordered the couple ceremony set for our engagement. The red ruffled tulle gown was breathtaking and my husband’s matching native was sharp. Sarah is our go-to designer!',
       rating: 5,
     },
   ],
@@ -177,39 +180,33 @@ export const siteConfig = {
   faqs: [
     {
       number: '01',
-      question: 'Do you have a physical walk-in shop?',
+      question: 'Where are you located and do you have a walk-in shop?',
       answer:
-        'We currently operate as a pure online bespoke atelier. This allows us to serve clients across all 36 states in Nigeria and internationally with customized attention. Fittings are accurately done using our step-by-step measurement guide.',
+        'Sarahskye Collection is based in Delta State, Nigeria. We currently operate as a pure online bespoke atelier without a walk-in showroom, allowing us to focus on tailored made-to-measure orders with affordable rates.',
     },
     {
       number: '02',
-      question: 'How does nationwide delivery work?',
+      question: 'How does delivery work?',
       answer:
-        'We ship to all 36 states in Nigeria via trusted domestic couriers (GIG Logistics, DHL, and interstate park waybill services). Delivery typically takes 24 to 72 hours once your garment is completed.',
+        'We offer prompt delivery across Delta State (Asaba, Warri, Ughelli, etc.) and nationwide delivery across Nigeria via reliable logistics and waybill services. Delivery typically takes 1 to 3 days after completion.',
     },
     {
       number: '03',
-      question: 'What is the standard lead time for an outfit?',
+      question: 'What are the turnaround lead times?',
       answer:
-        'Casual and corporate outfits take 3 to 6 working days. Traditional lace and boubou gowns take 4 to 7 working days. Bridal gowns and elaborate couple sets take 2 to 3 weeks. Express rush orders are available on request.',
+        'Casual and kids outfits take 3 to 5 working days. Corporate shirt dresses take 4 to 6 working days. Traditional lace sets take 4 to 7 working days. Bridal gowns take 2 to 3 weeks. Rush orders are available upon request.',
     },
     {
       number: '04',
-      question: 'Can I send my own fabric or picture inspiration?',
+      question: 'How do I submit measurements if you are in Delta State?',
       answer:
-        'Yes! You can send us inspiration photos or sketches via WhatsApp or our booking form. You can also waybill your fabric directly to us in Lagos or have Sarah source premium fabrics on your behalf.',
+        'Click our "Measurement Guide" button for simple step-by-step instructions. You can send your bust, waist, hips, and length directly to Sarah on WhatsApp or via the booking form.',
     },
     {
       number: '05',
-      question: 'How do I submit my measurements without a physical fitting?',
+      question: 'How do I pay for my order?',
       answer:
-        'Click our "Measurement Guide" button to see our easy visual instructions for measuring bust, waist, hips, and length. You can type them into the booking form or send them to Sarah on WhatsApp.',
-    },
-    {
-      number: '06',
-      question: 'What happens if my outfit needs minor adjustments?',
-      answer:
-        'Every outfit is tailored with generous inner seam allowances. If any minor alteration is ever needed, our local delivery guarantee covers adjustments, or we guide your local tailor with exact specs.',
+        'Payments are made securely via direct bank transfer. A 70% commitment deposit is required to commence fabric cutting and tailoring, with the balance paid before dispatch.',
     },
   ],
 };

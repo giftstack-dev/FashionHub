@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Mail, Instagram, Truck, Copy, Check, Clock, Sparkles, MapPinOff } from 'lucide-react';
+import { Phone, MessageSquare, Mail, Truck, Copy, Check, Clock, Sparkles } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 
 export const Contact: React.FC = () => {
@@ -64,14 +64,6 @@ export const Contact: React.FC = () => {
       actionText: 'Send Email',
       href: `mailto:${siteConfig.email}?subject=${encodeURIComponent('Inquiry: Sarahskye FashionHub Bespoke Order')}`,
     },
-    {
-      icon: Instagram,
-      title: 'Instagram Feed',
-      value: siteConfig.instagramHandle,
-      actionText: 'Follow @sarahskye',
-      href: siteConfig.instagramUrl,
-      external: true,
-    },
   ];
 
   return (
@@ -87,8 +79,8 @@ export const Contact: React.FC = () => {
             Contact Sarahskye
           </h2>
           <p className="text-sm sm:text-base text-[#4B5B72]">
-            We operate as an online bespoke studio with fast, tracked nationwide delivery to every state in
-            Nigeria. Reach out to consult directly on WhatsApp or email.
+            Based in Delta State, Nigeria. We operate as an online bespoke studio with prompt delivery across
+            Delta State and nationwide waybills. Reach out directly on WhatsApp or email.
           </p>
         </div>
 
@@ -122,8 +114,8 @@ export const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* 4 Action Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* 3 Action Cards (Call, WhatsApp, Email - Instagram removed per user request) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {contactCards.map((card, idx) => {
             const Icon = card.icon;
             return (
@@ -180,7 +172,7 @@ export const Contact: React.FC = () => {
 
         {/* Delivery & Studio Policy Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Nationwide Delivery Card */}
+          {/* Delivery Policy Card */}
           <div className="lg:col-span-6 bg-[#FAF7F2] rounded-2xl p-6 sm:p-8 border border-[#E8DFD0] flex flex-col justify-between shadow-xs">
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C5A059] mb-2">
@@ -188,27 +180,27 @@ export const Contact: React.FC = () => {
                 <span>Doorstep Delivery Policy</span>
               </div>
               <h3 className="font-serif-luxury text-2xl font-bold text-[#0F2444] mb-3">
-                Nationwide Delivery To All 36 States
+                Delta State & Nationwide Delivery
               </h3>
               <p className="text-sm text-[#4B5B72] leading-relaxed mb-6 font-light">
-                We do not operate a physical walk-in shop at this time. All creations are handcrafted to your
-                exact measurements in our private Lagos studio and securely packaged in garment bags for direct
-                delivery.
+                We are based in Delta State, Nigeria and operate as a pure online bespoke studio without a walk-in
+                shop. All creations are made to your exact measurements and packaged in protective garment bags for direct
+                courier delivery.
               </p>
 
               <div className="space-y-3 p-4 bg-white rounded-xl border border-[#E8DFD0] text-xs">
                 <div className="flex items-start gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 shrink-0" />
                   <div>
-                    <strong className="text-[#0F2444]">Lagos & Interstate Delivery:</strong>
-                    <p className="text-[#4B5B72] mt-0.5">GIG Logistics, DHL Express & Interstate Waybills (24 – 72 hrs)</p>
+                    <strong className="text-[#0F2444]">Delta State Delivery:</strong>
+                    <p className="text-[#4B5B72] mt-0.5">Prompt local dispatch across Asaba, Warri, Ughelli and environs.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="w-2 h-2 rounded-full bg-[#C5A059] mt-1.5 shrink-0" />
                   <div>
-                    <strong className="text-[#0F2444]">Worldwide Shipping:</strong>
-                    <p className="text-[#4B5B72] mt-0.5">UK, USA, Canada & Europe via tracked international courier (3 – 7 days)</p>
+                    <strong className="text-[#0F2444]">Nationwide & Interstate Waybills:</strong>
+                    <p className="text-[#4B5B72] mt-0.5">Reliable interstate delivery across Nigeria via GIG Logistics and trusted couriers.</p>
                   </div>
                 </div>
               </div>
@@ -217,7 +209,7 @@ export const Contact: React.FC = () => {
             <div className="pt-6">
               <a
                 href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-                  'Hello Sarah, I would like to inquire about delivery times and rates to my state/city!'
+                  'Hello Sarah, I would like to inquire about delivery times and waybill rates to my location!'
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

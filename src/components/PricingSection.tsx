@@ -105,11 +105,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
             </div>
             <div>
               <h4 className="font-serif-luxury text-xl font-bold text-[#0F2444] mb-1">
-                Ordering from Abroad or Outside Lagos?
+                Ordering from Anywhere in Nigeria or Abroad?
               </h4>
               <p className="text-xs sm:text-sm text-[#4B5B72] max-w-xl">
-                You do not need to visit our studio in person! We provide an interactive step-by-step
-                measurement chart with video guidance for taking your bust, waist, hip, and length specs.
+                We are based in Delta State, Nigeria and serve clients nationwide and overseas! Use our interactive
+                measurement chart with clear guidance for measuring your bust, waist, hips, and length.
               </p>
             </div>
           </div>
